@@ -135,6 +135,7 @@ img {
   color: var(--black);
   margin-right: 93px;
 }
+
 .navigation-item {
   /* display: flex;
   margin-left: auto;
@@ -153,13 +154,13 @@ img {
   align-items: center;
   justify-content: center;
 }
-.contacts-list {
+.contacts-social__list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contacts-social-link {
+.contacts-social__link {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -178,7 +179,7 @@ img {
 .contacts-item {
   list-style: none;
 }
-.contacts-social-item:not(:last-child) {
+.contacts-social__item:not(:last-child) {
   margin-right: 30px;
 }
 /* .cocontacts-item:not(:last-child) {
@@ -202,9 +203,8 @@ img {
 .contacts-socials-list {
   display: flex;
 }
-.contacts-list {
-}
-.contacts-social-item {
+
+.contacts-social__item {
   list-style-type: none;
   text-decoration: none;
   gap: 30px;
@@ -213,39 +213,39 @@ img {
   margin-right: 30px;
 }
 
-.contacts-social-icon-envelop {
+.contacts-social__icon--envelop {
   margin-right: 10px;
   fill: var(--broun);
   width: 16px;
   height: 12px;
 }
 
-.contacts-social-icon-smartphone {
+.contacts-social__icon--smartphone {
   fill: var(--broun);
   width: 12px;
   height: 16px;
   margin-right: 10px;
 }
 
-.contacts-social-item:hover .contacts-social-link {
+.contacts-social__item:hover .contacts-social__link {
   fill: var(--blue);
   color: var(--blue);
 }
 
-.contacts-social-link:focus {
+.contacts-social__link:focus {
   color: #188ce8;
 }
 
-.contacts-social-icon-envelo,
-.contacts-social-icon-smartphone {
+.contacts-social__icon--envelo,
+.contacts-social__icon--smartphone {
   transition: fill var(--transition-dur-and-func);
 }
 
-.contacts-social-link:focus .contacts-social-icon-envelop {
+.contacts-social__link:focus .contacts-social__icon--envelop  {
   color: #188ce8;
   fill: var(--blue);
 }
-.contacts-social-link:focus .contacts-social-icon-smartphone {
+.contacts-social__link:focus .contacts-social__icon--smartphone {
   color: #188ce8;
   fill: var(--blue);
 }
