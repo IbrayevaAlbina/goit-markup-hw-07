@@ -23,15 +23,30 @@
     transition: color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
 
-
-    &:focus {
+  &:focus {
         color: #188ce8;
       }
+    
+    
+  &:focus  .contacts-social__icon--envelop  {
+        color: #188ce8;
+        fill: var(--blue);
+    }
+    
+  &:focus  .contacts-social__icon--smartphone {
+    
+        color: #188ce8;
+        fill: var(--blue);
+    }
+      
+
+
   
   }
+
+ 
   
-  
-  
+
 
   .contacts-social__item {
     list-style-type: none;
@@ -48,17 +63,9 @@
       }
 
 
-    &:focus .contacts-social__icon--envelop  {
-        color: #188ce8;
-        fill: var(--blue);
-      }
-    &:focus .contacts-social__icon--smartphone {
-        color: #188ce8;
-        fill: var(--blue);
-      }
   }
-  
-  
+
+
   
   
   .contacts-social__icon--envelop {
@@ -76,8 +83,9 @@
   }
   
 
-  .contacts-social__icon--envelo,
+  .contacts-social__icon--envelop,
   .contacts-social__icon--smartphone {
     transition: fill var(--transition-dur-and-func);
   }
-  
+
+ 
